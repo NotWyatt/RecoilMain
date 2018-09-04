@@ -1,0 +1,6 @@
+﻿  RecoilMain.cpp
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(44): warning C4244: 'initializing': conversion from 'double' to 'int32_t', possible loss of data
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(47): warning C4244: 'initializing': conversion from 'double' to 'int32_t', possible loss of data
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(32): warning C4101: 'newRecoilY': unreferenced local variable
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(33): warning C4101: 'newRecoilX': unreferenced local variable
+  RecoilMain.vcxproj -> E:\VSProject\New folder\RecoilMain\x64\Debug\RecoilMain.exe

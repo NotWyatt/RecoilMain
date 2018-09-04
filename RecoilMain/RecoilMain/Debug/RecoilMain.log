@@ -1,0 +1,8 @@
+﻿  RecoilMain.cpp
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(4): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(42): warning C4018: '<': signed/unsigned mismatch
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(44): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(45): warning C4244: 'initializing': conversion from 'double' to 'int', possible loss of data
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(35): warning C4101: 'newRecoilY': unreferenced local variable
+e:\vsproject\new folder\recoilmain\recoilmain\recoilmain.cpp(36): warning C4101: 'newRecoilX': unreferenced local variable
+  RecoilMain.vcxproj -> E:\VSProject\New folder\RecoilMain\Debug\RecoilMain.exe
