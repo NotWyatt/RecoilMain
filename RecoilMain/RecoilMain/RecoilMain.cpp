@@ -40,6 +40,7 @@ void recoil()
 	for (;;)
 	{
 		int shotTiming = 0;
+		int32_t shakerNum = rand() % 3;
 		while (GetAsyncKeyState(1) & 0x8000 && (GetAsyncKeyState(2) & 0x8000 && bRecoil))
 		{
 			if (bAk == 1)
@@ -50,16 +51,15 @@ void recoil()
 
 				if (shotTiming < 30)
 				{
-					int32_t shakerNum = rand() % 3;
 					int32_t valueX = (AssualtRifle::recoilTableX[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (AssualtRifle::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -79,16 +79,15 @@ void recoil()
 				int fireRate = 175;
 				if (shotTiming < 16)
 				{
-					int32_t shakerNum = rand() % 8;
 					int32_t valueX = (SemiRifle::recoilTableX[shotTiming] * 0.48);
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (SemiRifle::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -108,16 +107,15 @@ void recoil()
 				int fireRate = 150;
 				if (shotTiming < 6)
 				{
-					int32_t shakerNum = rand() % 6;
 					int32_t valueX = (Python::recoilTableX[shotTiming] * 0.48);
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (Python::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -142,9 +140,9 @@ void recoil()
 
 					int32_t valueY = (CustomSmg::recoilTableY[shotTiming] * 0.48);
 					int32_t smoothingY = valueY / 5;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -164,16 +162,15 @@ void recoil()
 				int fireRate = 98;
 				if (shotTiming < 30)
 				{
-					int32_t shakerNum = rand() % 2;
 					int32_t valueX = (LaserSmg::recoilTableX[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (LaserSmg::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -193,16 +190,15 @@ void recoil()
 				int fireRate = 120;
 				if (shotTiming < 100)
 				{
-					int32_t shakerNum = rand() % 3;
 					int32_t valueX = (MachineGun::recoilTableX[shotTiming] * 0.48);
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (MachineGun::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -222,16 +218,15 @@ void recoil()
 				int fireRate = 175;
 				if (shotTiming < 8)
 				{
-					int32_t shakerNum = rand() % 2;
 					int32_t valueX = (Revolver::recoilTableX[shotTiming] * 0.48);
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (Revolver::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -251,16 +246,15 @@ void recoil()
 				int fireRate = 100;
 				if (shotTiming < 15)
 				{
-					int32_t shakerNum = rand() % 3;
 					int32_t valueX = (PistolO::recoilTableX[shotTiming] * 0.48);
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (PistolO::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -280,16 +274,15 @@ void recoil()
 				int fireRate = 150;
 				if (shotTiming < 10)
 				{
-					int32_t shakerNum = rand() % 3;
 					int32_t valueX = (SemiPistol::recoilTableX[shotTiming] * 0.48);
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (SemiPistol::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					///cout << "M Value = " << shakerNum;
+					//cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
@@ -308,16 +301,15 @@ void recoil()
 				int fireRate = 120;
 				if (shotTiming < 30)
 				{
-					int32_t shakerNum = rand() % 3;
 					int32_t valueX = (LazerRifle::recoilTableX[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingX = valueX / 5;
 
 					int32_t valueY = (LazerRifle::recoilTableY[shotTiming] * 0.48) + shakerNum;
 					int32_t smoothingY = valueY / 5;
-					cout << "M Value = " << shakerNum;
-					cout << " X coord = " << valueX;
-					cout << "  Y coord = " << valueY;
-					cout << "   Shot Number = " << shotTiming << "\n";
+					////cout << "M Value = " << shakerNum;
+					///cout << " X coord = " << valueX;
+					///cout << "  Y coord = " << valueY;
+					///cout << "   Shot Number = " << shotTiming << "\n";
 					Sleep(1);
 
 
